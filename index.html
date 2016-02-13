@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GTD tools</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="header">
+		<h1>GTD Tools</h1>
+	</div>
+	<div class="main">
+		<div id="category-list">
+			<div id="category-list-header">
+				<h2 class="all">所有任务(<span id="all-task-num">4</span>)</h2>
+				<h2 class="list">分类列表</h2>
+			</div>
+			<div id="category-list-wrapper">
+				<ul>
+					<li class="category" data-id="0">
+							<i class="fa fa-folder-o"></i>
+							默认分类(<span>4</span>)
+							<i class="fa fa-times"></i>
+						<ul>
+							<li>
+								<h2>
+									<i class="fa fa-folder-o"></i>
+									分类1(<span>2</span>)
+									<i class="fa fa-times"></i>
+								</h2>
+								<ul>
+							<li>
+								<h2>
+									<i class="fa fa-folder-o"></i>
+									分类1(<span>2</span>)
+									<i class="fa fa-times"></i>
+								</h2>
+							</li>
+							</ul>
+							</li>
+							<li>
+								<h2>
+									<i></i>
+									分类2(<span>2</span>)
+									<i></i>
+								</h2>
+							</li>
+						</ul>
+					</li>
+					<li class="category" data-id="0">
+						<h2>
+							<i></i>
+							分类3(<span>2</span>)
+							<i></i>
+						</h2>
+						<ul>
+							<li>
+								<h2>
+									<i></i>
+									分类4(<span>2</span>)
+									<i></i>
+								</h2>
+							</li>
+							<li>
+								<h2>
+									<i></i>
+									分类5(<span>2</span>)
+									<i></i>
+								</h2>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="category-list-btn">
+				<h2><i class="fa fa-plus"></i> 添加分类</h2>
+			</div>
+		</div>
+		<div id="task-list">
+			<div id="task-list-header">
+				<ul class="clearfix">
+					<li data-fillter="all">所有</li>
+					<li data-fillter="unfinished">未完成</li>
+					<li data-fillter="finished">已完成</li>
+				</ul>
+			</div>
+			<div id="task-list-wrapper">
+				<p>2014-02-01</p>
+				<ul>
+					<li class="finished">jsjsjs</li>
+					<li class="unfinisher">jsjsjsjs</li>
+				</ul>
+			</div>
+			<div id="task-list-btn">
+				<h2><i class="fa fa-plus"></i> 添加任务</h2>
+			</div>
+		</div>
+		<div id="task-detail">
+			<div class="task-detail-title">
+				<h3>任务标题:<span>to-do-1</span></h3>
+			</div>
+			<div class="task-detail-date">
+				<h3>任务日期:<span>2014-02-01</span></h3>
+			</div>
+			<div class="task-detail-content">
+				<p>开始 task0001 的编码任务</p>
+			</div>
+			<div id="task-detail-btn">
+				<i id="edit-task" class="fa fa-tasks">编辑</i>
+				<i id="task-change-finish" class="fa fa-check">完成</i>
+			</div>
+		</div>
+		<div id="task-edit" style="display:block;">
+			<div class="task-detail-title">
+				<h3>任务标题:<input type="text" placeholder="输入标题"><h3>
+			</div>
+			<div class="task-detail-date">
+				<h3>任务日期:<input type="text" placeholder="输入日期 格式yyyy-mm-dd"></h3>
+			</div>
+			<div class="task-detail-content">
+				<textarea name="" id="inputContent" cols="30" rows="10"></textarea>
+			</div>
+			<div id="task-edit-btn">
+				<i id="new-task-save" class="fa fa-check">保存</i>
+				<i id="new-task-quit" class="fa fa-times">放弃</i>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

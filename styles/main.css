@@ -1,0 +1,241 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+/*reset*/
+body,p,h1,h2,h3,h4,h5,h6,ul,li,span,input{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: normal;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+	font-size: 62.5%;
+	line-height: 1.5;
+}
+
+/*header*/
+.header{
+	height: 60px;
+	width: 100%;
+	background-color: #03a9f4;
+}
+
+.header h1{
+	line-height: 60px;
+	font-size: 25px;
+	padding-left: 20px;
+}
+
+/*main*/
+.main{
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	bottom: 0;
+}
+/*category*/
+
+#category-list{
+	width: 238px;
+	float: left;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	background-color: #f2f2f2;
+	position: relative;
+}
+
+#task-list{
+	width: 238px;
+	float: left;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	position: relative;
+}
+
+#task-detail{
+	width:;
+	margin-left: 480px;
+	height: 100%;
+	position: relative;
+}
+
+/*category-list*/
+#category-list{
+	line-height: 1.8;
+}
+
+#category-list-header h2{
+	font-size: 1.6rem;
+	padding: 8px 0 8px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+
+#category-list-header .list{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+#category-list-wrapper{
+	position: absolute;
+	top: 74px;
+	left: 0;
+	right: 0;
+	bottom: 50px;
+}
+
+#category-list-wrapper li{
+	font-size: 1.4rem;
+	cursor: pointer;
+	position: relative;
+}
+
+#category-list-wrapper li .fa-times {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+ 
+#category-list-wrapper ul{
+ 	padding-left: 20px;
+}
+
+/*task-list*/
+#task-list-header {
+	display: block;
+	background-color: #eee;
+	border-bottom: 1px solid #ccc;
+}
+
+#task-list-header li {
+	float: left;
+	width: 79.3px;
+	font-size: 1.2rem;
+	line-height: 2;
+	padding: 8px 0px 8px 0px;
+	box-sizing :border-box;
+	text-align: center;
+	cursor: pointer;
+	background-color: #7f7;
+}
+
+#task-list-wrapper{
+	position: absolute;
+	width: 100%;
+	top: 44px;
+	bottom: 45px;
+	font-size: 1.4rem;
+	line-height: 30px;
+	overflow: auto;
+}
+
+#task-list-wrapper p{
+	padding-left: 15px;
+	background-color: #fafaee;
+}
+
+#task-list-wrapper ul{
+	padding-left: 30px;
+	background-color: #eee;
+}
+
+#task-list-warper .finished{
+	color: green;
+}
+
+#task-list-btn,#category-list-btn {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	border-top: 1px solid #ccc;
+	background-color: #eee;
+	line-height: 1.5;
+}
+
+#task-list-btn h2,#category-list-btn h2 {
+	font-size: 1.6rem;
+	padding: 10px 15px;
+}
+
+#task
+
+/*task-detail*/
+
+
+#task-detail span{
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.task-detail-title {
+	font-size: 1.8rem;
+	padding: 8px 0 6px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.task-detail-date {
+	font-size: 1.8rem;
+	padding: 8px 0 6px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.task-detail-content {
+	padding: 20px 10px 20px 10px;
+	position: absolute;
+	top: 82px;
+	bottom: 20px;
+	left: 10px;
+	right: 10px;
+	box-sizing: border-box;
+	font-size: 1.5rem;
+}
+
+
+#task-detail-btn{
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	font-size: 1.6rem;
+}
+
+/*task-edit*/
+
+#task-edit {
+	position: absolute;
+	top: 0;
+	left: 480px;
+	bottom: 0;
+	right: 0;
+	background-color: #eee;
+}
+
+#task-edit input[type="text"] {
+	display: inline-block;
+	height: 30px;
+	width: 300px;
+	padding-left: 10px;
+	margin-left: 10px;
+}
+
+#task-edit textarea {
+	width: 100%;
+	height: 100%;
+}
+
+#task-edit-btn{
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	font-size: 1.6rem;
+}
